@@ -83,17 +83,13 @@
                       "parentColumnSpace": 74,
                       "dynamicTriggerPathList": [],
                       "overflow": "NONE",
-                      "fontFamily": "Ubuntu",
+                      "fontFamily": "Roboto",
                       "leftColumn": 0,
                       "dynamicBindingPathList": [],
                       "text": "Codify Employees",
                       "labelTextSize": "0.875rem",
-<<<<<<< HEAD
                       "rightColumn": 16,
                       "backgroundColor": "#9333ea",
-=======
-                      "rightColumn": 26,
->>>>>>> origin
                       "textAlign": "LEFT",
                       "dynamicHeight": "FIXED",
                       "widgetId": "wzbd482jqa",
@@ -105,7 +101,7 @@
                       "isLoading": false,
                       "borderRadius": "0px",
                       "maxDynamicHeight": 9000,
-                      "fontSize": "2rem",
+                      "fontSize": "1.5rem",
                       "minDynamicHeight": 4
                     },
                     {
@@ -353,7 +349,7 @@
                     },
                     {
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-                      "borderColor": "#ffffff",
+                      "borderColor": "#E0DEDE",
                       "iconSVG": "/static/media/icon.5b428de12db9ad6a591955ead07f86e9.svg",
                       "onSubmit": "{{postEmployeeInfo.run()}}",
                       "topRow": 0,
@@ -706,11 +702,7 @@
                       "sourceData": "",
                       "resetButtonLabel": "Reset",
                       "key": "6yiih37rsn",
-<<<<<<< HEAD
                       "backgroundColor": "#93c5fd",
-=======
-                      "backgroundColor": "#e9d5ff",
->>>>>>> origin
                       "isDeprecated": false,
                       "rightColumn": 64,
                       "widgetId": "quh2jpdzzw",
@@ -742,13 +734,8 @@
               "borderWidth": "0",
               "key": "51qj7fn4ad",
               "labelTextSize": "0.875rem",
-<<<<<<< HEAD
               "backgroundColor": "#581c87",
               "rightColumn": 47,
-=======
-              "backgroundColor": "#9333ea",
-              "rightColumn": 48,
->>>>>>> origin
               "dynamicHeight": "FIXED",
               "widgetId": "7cybe9mxc1",
               "containerStyle": "card",
