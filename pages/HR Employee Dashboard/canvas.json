@@ -70,6 +70,7 @@
                     {
                       "boxShadow": "none",
                       "widgetName": "Employees_Label",
+                      "borderColor": "#fafafa",
                       "dynamicPropertyPathList": [
                         {
                           "key": "fontSize"
@@ -87,12 +88,17 @@
                       "dynamicBindingPathList": [],
                       "text": "Codify Employees",
                       "labelTextSize": "0.875rem",
+<<<<<<< HEAD
+                      "rightColumn": 16,
+                      "backgroundColor": "#9333ea",
+=======
                       "rightColumn": 26,
+>>>>>>> origin
                       "textAlign": "LEFT",
                       "dynamicHeight": "FIXED",
                       "widgetId": "wzbd482jqa",
                       "isVisible": true,
-                      "fontStyle": "BOLD",
+                      "fontStyle": "",
                       "version": 1,
                       "textColor": "#ffffff",
                       "parentId": "fi1mfel9i0",
@@ -329,7 +335,7 @@
                       "key": "6kj57bn7q2",
                       "canFreezeColumn": true,
                       "isDeprecated": false,
-                      "rightColumn": 49,
+                      "rightColumn": 45,
                       "textSize": "0.875rem",
                       "widgetId": "sto2qw61jn",
                       "minWidth": 450,
@@ -353,22 +359,10 @@
                       "topRow": 0,
                       "type": "JSON_FORM_WIDGET",
                       "animateLoading": true,
-                      "leftColumn": 49,
+                      "leftColumn": 45,
                       "dynamicBindingPathList": [
                         {
-                          "key": "borderRadius"
-                        },
-                        {
                           "key": "boxShadow"
-                        },
-                        {
-                          "key": "submitButtonStyles.buttonColor"
-                        },
-                        {
-                          "key": "submitButtonStyles.borderRadius"
-                        },
-                        {
-                          "key": "resetButtonStyles.buttonColor"
                         },
                         {
                           "key": "resetButtonStyles.borderRadius"
@@ -432,7 +426,7 @@
                       "dynamicHeight": "AUTO_HEIGHT",
                       "autoGenerateForm": true,
                       "resetButtonStyles": {
-                        "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                        "buttonColor": "#581c87",
                         "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                         "boxShadow": "none",
                         "buttonVariant": "SECONDARY"
@@ -519,7 +513,7 @@
                         }
                       },
                       "disabledWhenInvalid": true,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "borderRadius": "1.5rem",
                       "originalBottomRow": 49,
                       "useSourceData": false,
                       "schema": {
@@ -686,8 +680,8 @@
                       },
                       "widgetName": "new_employee_form",
                       "submitButtonStyles": {
-                        "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                        "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                        "buttonColor": "#581c87",
+                        "borderRadius": "0.375rem",
                         "boxShadow": "none",
                         "buttonVariant": "PRIMARY"
                       },
@@ -712,7 +706,11 @@
                       "sourceData": "",
                       "resetButtonLabel": "Reset",
                       "key": "6yiih37rsn",
+<<<<<<< HEAD
+                      "backgroundColor": "#93c5fd",
+=======
                       "backgroundColor": "#e9d5ff",
+>>>>>>> origin
                       "isDeprecated": false,
                       "rightColumn": 64,
                       "widgetId": "quh2jpdzzw",
@@ -744,8 +742,13 @@
               "borderWidth": "0",
               "key": "51qj7fn4ad",
               "labelTextSize": "0.875rem",
+<<<<<<< HEAD
+              "backgroundColor": "#581c87",
+              "rightColumn": 47,
+=======
               "backgroundColor": "#9333ea",
               "rightColumn": 48,
+>>>>>>> origin
               "dynamicHeight": "FIXED",
               "widgetId": "7cybe9mxc1",
               "containerStyle": "card",
