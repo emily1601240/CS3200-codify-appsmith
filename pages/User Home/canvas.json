@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 380,
+          "bottomRow": 570,
           "containerStyle": "none",
           "snapRows": 58,
           "parentRowSpace": 1,
@@ -33,7 +33,7 @@
               "displayName": "Tabs",
               "iconSVG": "/static/media/icon.74a6d653c8201e66f1cd367a3fba2657.svg",
               "topRow": 0,
-              "bottomRow": 29,
+              "bottomRow": 57,
               "parentRowSpace": 10,
               "type": "TABS_WIDGET",
               "hideCard": false,
@@ -57,7 +57,7 @@
                   "tabId": "tab1",
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
-                  "bottomRow": 250,
+                  "bottomRow": 530,
                   "topRow": 0,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
@@ -82,7 +82,7 @@
                         "group"
                       ],
                       "topRow": 7,
-                      "bottomRow": 23,
+                      "bottomRow": 51,
                       "parentRowSpace": 10,
                       "type": "CONTAINER_WIDGET",
                       "hideCard": false,
@@ -104,7 +104,7 @@
                           "widgetName": "Canvas3",
                           "displayName": "Canvas",
                           "topRow": 0,
-                          "bottomRow": 160,
+                          "bottomRow": 440,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
@@ -315,7 +315,7 @@
                               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                               "parentColumnSpace": 10.642013549804688,
                               "dynamicTriggerPathList": [],
-                              "leftColumn": 7,
+                              "leftColumn": 35,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "truncateButtonColor"
@@ -332,7 +332,7 @@
                               "text": "Members",
                               "key": "3pzn16ibke",
                               "isDeprecated": false,
-                              "rightColumn": 23,
+                              "rightColumn": 51,
                               "textAlign": "LEFT",
                               "dynamicHeight": "AUTO_HEIGHT",
                               "widgetId": "e6wlwrnnp6",
@@ -389,6 +389,43 @@
                               "isLoading": false,
                               "borderRadius": "1.5rem",
                               "buttonVariant": "PRIMARY"
+                            },
+                            {
+                              "boxShadow": "none",
+                              "widgetName": "Camera1",
+                              "isCanvas": false,
+                              "displayName": "Camera",
+                              "iconSVG": "/static/media/icon.79c0d6de26a15bf464f2485130faa461.svg",
+                              "searchTags": [
+                                "photo",
+                                "video recorder"
+                              ],
+                              "topRow": 9,
+                              "bottomRow": 42,
+                              "parentRowSpace": 10,
+                              "type": "CAMERA_WIDGET",
+                              "hideCard": false,
+                              "mode": "CAMERA",
+                              "parentColumnSpace": 11.602935791015625,
+                              "leftColumn": 10,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "borderRadius"
+                                }
+                              ],
+                              "isDisabled": false,
+                              "key": "h7nfz6oc98",
+                              "isMirrored": true,
+                              "isDeprecated": false,
+                              "rightColumn": 35,
+                              "widgetId": "xi2wjjpt95",
+                              "isVisible": true,
+                              "version": 1,
+                              "parentId": "q1xtcj2i31",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "responsiveBehavior": "hug",
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
                             }
                           ],
                           "key": "ch1ynpamtz",
