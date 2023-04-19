@@ -662,7 +662,7 @@
                               "animateLoading": true,
                               "parentColumnSpace": 17.9375,
                               "dynamicTriggerPathList": [],
-                              "leftColumn": 7,
+                              "leftColumn": 50,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "borderRadius"
@@ -680,7 +680,7 @@
                               "key": "py3qlpwmzq",
                               "orientation": "horizontal",
                               "isDeprecated": false,
-                              "rightColumn": 42,
+                              "rightColumn": 62,
                               "widgetId": "odk2iyft7t",
                               "minWidth": 450,
                               "isVisible": true,
@@ -724,7 +724,7 @@
                                   "key": "onClick"
                                 }
                               ],
-                              "leftColumn": 53,
+                              "leftColumn": 62,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "isDisabled"
@@ -740,7 +740,7 @@
                               "isDisabled": "{{currentItem.time_end !== null}}",
                               "key": "6mxrybslxf",
                               "labelTextSize": "0.875rem",
-                              "rightColumn": 63,
+                              "rightColumn": 64,
                               "isDefaultClickDisabled": true,
                               "dynamicHeight": "FIXED",
                               "widgetId": "d8wnxtj1fu",
@@ -848,27 +848,6 @@
                               "animateLoading": true,
                               "dynamicBindingPathList": [
                                 {
-                                  "key": "primaryColumns.step.computedValue"
-                                },
-                                {
-                                  "key": "primaryColumns.task.computedValue"
-                                },
-                                {
-                                  "key": "primaryColumns.status.computedValue"
-                                },
-                                {
-                                  "key": "primaryColumns.action.computedValue"
-                                },
-                                {
-                                  "key": "primaryColumns.action.buttonColor"
-                                },
-                                {
-                                  "key": "primaryColumns.action.borderRadius"
-                                },
-                                {
-                                  "key": "primaryColumns.action.boxShadow"
-                                },
-                                {
                                   "key": "accentColor"
                                 },
                                 {
@@ -876,6 +855,24 @@
                                 },
                                 {
                                   "key": "boxShadow"
+                                },
+                                {
+                                  "key": "tableData"
+                                },
+                                {
+                                  "key": "primaryColumns.clockin.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.clockout.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.date.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.fname.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.id.computedValue"
                                 }
                               ],
                               "needsHeightForContent": true,
@@ -913,22 +910,23 @@
                                 }
                               },
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "columnUpdatedAt": 1681866276734,
+                              "columnUpdatedAt": 1681923560616,
+                              "originalBottomRow": 67,
                               "defaultSelectedRowIndices": [
                                 0
                               ],
                               "widgetName": "Table1",
                               "defaultPageSize": 0,
                               "columnOrder": [
-                                "step",
-                                "task",
-                                "status",
-                                "action",
-                                "customColumn1"
+                                "fname",
+                                "id",
+                                "clockin",
+                                "clockout",
+                                "date"
                               ],
                               "dynamicPropertyPathList": [],
                               "displayName": "Table",
-                              "bottomRow": 31,
+                              "bottomRow": 33,
                               "columnWidthMap": {
                                 "task": 245,
                                 "step": 173,
@@ -940,110 +938,19 @@
                               "dynamicTriggerPathList": [],
                               "borderWidth": "1",
                               "primaryColumns": {
-                                "step": {
+                                "clockin": {
+                                  "allowCellWrapping": false,
                                   "index": 0,
                                   "width": 150,
-                                  "id": "step",
-                                  "originalId": "step",
-                                  "alias": "step",
+                                  "originalId": "clockin",
+                                  "id": "clockin",
+                                  "alias": "clockin",
                                   "horizontalAlignment": "LEFT",
                                   "verticalAlignment": "CENTER",
                                   "columnType": "text",
+                                  "textColor": "",
                                   "textSize": "0.875rem",
-                                  "enableFilter": true,
-                                  "enableSort": true,
-                                  "isVisible": true,
-                                  "isCellVisible": true,
-                                  "isCellEditable": false,
-                                  "isDerived": false,
-                                  "label": "Employee Name",
-                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"step\"]))}}",
-                                  "validation": {},
-                                  "sticky": "",
-                                  "labelColor": "#FFFFFF"
-                                },
-                                "task": {
-                                  "index": 1,
-                                  "width": 150,
-                                  "id": "task",
-                                  "originalId": "task",
-                                  "alias": "task",
-                                  "horizontalAlignment": "LEFT",
-                                  "verticalAlignment": "CENTER",
-                                  "columnType": "text",
-                                  "textSize": "0.875rem",
-                                  "enableFilter": true,
-                                  "enableSort": true,
-                                  "isVisible": true,
-                                  "isCellVisible": true,
-                                  "isCellEditable": false,
-                                  "isDerived": false,
-                                  "label": "Employee ID",
-                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"task\"]))}}",
-                                  "validation": {},
-                                  "sticky": "",
-                                  "labelColor": "#FFFFFF"
-                                },
-                                "status": {
-                                  "index": 2,
-                                  "width": 150,
-                                  "id": "status",
-                                  "originalId": "status",
-                                  "alias": "status",
-                                  "horizontalAlignment": "LEFT",
-                                  "verticalAlignment": "CENTER",
-                                  "columnType": "text",
-                                  "textSize": "0.875rem",
-                                  "enableFilter": true,
-                                  "enableSort": true,
-                                  "isVisible": true,
-                                  "isCellVisible": true,
-                                  "isCellEditable": false,
-                                  "isDerived": false,
-                                  "label": "Date Worked",
-                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"status\"]))}}",
-                                  "validation": {},
-                                  "sticky": "",
-                                  "labelColor": "#FFFFFF"
-                                },
-                                "action": {
-                                  "index": 3,
-                                  "width": 150,
-                                  "id": "action",
-                                  "originalId": "action",
-                                  "alias": "action",
-                                  "horizontalAlignment": "LEFT",
-                                  "verticalAlignment": "CENTER",
-                                  "columnType": "button",
-                                  "textSize": "0.875rem",
-                                  "enableFilter": true,
-                                  "enableSort": true,
-                                  "isVisible": true,
-                                  "isCellVisible": true,
-                                  "isCellEditable": false,
-                                  "isDisabled": false,
-                                  "isDerived": false,
-                                  "label": "Clock In",
-                                  "onClick": "{{currentRow.step === '#1' ? showAlert('Done', 'success') : currentRow.step === '#2' ? navigateTo('https://docs.appsmith.com/core-concepts/connecting-to-data-sources/querying-a-database',undefined,'NEW_WINDOW') : navigateTo('https://docs.appsmith.com/core-concepts/displaying-data-read/display-data-tables',undefined,'NEW_WINDOW')}}",
-                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"action\"]))}}",
-                                  "validation": {},
-                                  "sticky": "",
-                                  "labelColor": "#FFFFFF",
-                                  "buttonColor": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.colors.primaryColor))}}",
-                                  "borderRadius": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
-                                  "boxShadow": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( 'none'))}}"
-                                },
-                                "customColumn1": {
-                                  "allowCellWrapping": false,
-                                  "index": 4,
-                                  "width": 150,
-                                  "originalId": "customColumn1",
-                                  "id": "customColumn1",
-                                  "alias": "Clock Out",
-                                  "horizontalAlignment": "LEFT",
-                                  "verticalAlignment": "CENTER",
-                                  "columnType": "text",
-                                  "textSize": "0.875rem",
+                                  "fontStyle": "",
                                   "enableFilter": true,
                                   "enableSort": true,
                                   "isVisible": true,
@@ -1051,15 +958,130 @@
                                   "isCellEditable": false,
                                   "isEditable": false,
                                   "isCellVisible": true,
-                                  "isDerived": true,
+                                  "isDerived": false,
+                                  "label": "Clock In",
+                                  "isSaveVisible": true,
+                                  "isDiscardVisible": true,
+                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"clockin\"]))}}",
+                                  "sticky": "",
+                                  "validation": {},
+                                  "cellBackground": ""
+                                },
+                                "clockout": {
+                                  "allowCellWrapping": false,
+                                  "index": 1,
+                                  "width": 150,
+                                  "originalId": "clockout",
+                                  "id": "clockout",
+                                  "alias": "clockout",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "text",
+                                  "textColor": "",
+                                  "textSize": "0.875rem",
+                                  "fontStyle": "",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "isCellEditable": false,
+                                  "isEditable": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
                                   "label": "Clock Out",
                                   "isSaveVisible": true,
                                   "isDiscardVisible": true,
-                                  "computedValue": "",
+                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"clockout\"]))}}",
                                   "sticky": "",
                                   "validation": {},
-                                  "buttonStyle": "rgb(3, 179, 101)",
-                                  "labelColor": "#FFFFFF"
+                                  "cellBackground": ""
+                                },
+                                "date": {
+                                  "allowCellWrapping": false,
+                                  "index": 2,
+                                  "width": 150,
+                                  "originalId": "date",
+                                  "id": "date",
+                                  "alias": "date",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "text",
+                                  "textColor": "",
+                                  "textSize": "0.875rem",
+                                  "fontStyle": "",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "isCellEditable": false,
+                                  "isEditable": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "Date",
+                                  "isSaveVisible": true,
+                                  "isDiscardVisible": true,
+                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"date\"]))}}",
+                                  "sticky": "",
+                                  "validation": {},
+                                  "cellBackground": ""
+                                },
+                                "fname": {
+                                  "allowCellWrapping": false,
+                                  "index": 3,
+                                  "width": 150,
+                                  "originalId": "fname",
+                                  "id": "fname",
+                                  "alias": "fname",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "text",
+                                  "textColor": "",
+                                  "textSize": "0.875rem",
+                                  "fontStyle": "",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "isCellEditable": false,
+                                  "isEditable": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "First Name",
+                                  "isSaveVisible": true,
+                                  "isDiscardVisible": true,
+                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"fname\"]))}}",
+                                  "sticky": "",
+                                  "validation": {},
+                                  "cellBackground": ""
+                                },
+                                "id": {
+                                  "allowCellWrapping": false,
+                                  "index": 4,
+                                  "width": 150,
+                                  "originalId": "id",
+                                  "id": "id",
+                                  "alias": "id",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "number",
+                                  "textColor": "",
+                                  "textSize": "0.875rem",
+                                  "fontStyle": "",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "isCellEditable": false,
+                                  "isEditable": false,
+                                  "isCellVisible": true,
+                                  "isDerived": false,
+                                  "label": "Id",
+                                  "isSaveVisible": true,
+                                  "isDiscardVisible": true,
+                                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}",
+                                  "sticky": "",
+                                  "validation": {},
+                                  "cellBackground": ""
                                 }
                               },
                               "key": "soelehoq2f",
@@ -1069,7 +1091,7 @@
                               "textSize": "0.875rem",
                               "widgetId": "qr51uzrtgt",
                               "minWidth": 450,
-                              "tableData": "",
+                              "tableData": "{{getTimesheetInfo.data}}",
                               "label": "Data",
                               "searchKey": "",
                               "parentId": "pluh0kpntm",
@@ -1077,8 +1099,67 @@
                               "horizontalAlignment": "LEFT",
                               "isVisibleSearch": true,
                               "responsiveBehavior": "fill",
+                              "originalTopRow": 46,
                               "isVisiblePagination": true,
                               "verticalAlignment": "CENTER"
+                            },
+                            {
+                              "boxShadow": "none",
+                              "widgetName": "Input2",
+                              "displayName": "Input",
+                              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+                              "searchTags": [
+                                "form",
+                                "text input",
+                                "number",
+                                "textarea"
+                              ],
+                              "topRow": 40,
+                              "bottomRow": 47,
+                              "parentRowSpace": 10,
+                              "labelWidth": 5,
+                              "autoFocus": false,
+                              "type": "INPUT_WIDGET_V2",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 17.037109375,
+                              "resetOnSubmit": true,
+                              "leftColumn": 50,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                }
+                              ],
+                              "labelPosition": "Top",
+                              "labelStyle": "",
+                              "inputType": "TEXT",
+                              "isDisabled": false,
+                              "key": "lzzj2g5g3n",
+                              "labelTextSize": "0.875rem",
+                              "isRequired": false,
+                              "isDeprecated": false,
+                              "rightColumn": 62,
+                              "dynamicHeight": "FIXED",
+                              "widgetId": "19ywnqd1o0",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "showStepArrows": false,
+                              "minWidth": 450,
+                              "isVisible": true,
+                              "label": "Label",
+                              "version": 2,
+                              "parentId": "pluh0kpntm",
+                              "labelAlignment": "left",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "responsiveBehavior": "fill",
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "maxDynamicHeight": 9000,
+                              "iconAlign": "left",
+                              "defaultText": "",
+                              "minDynamicHeight": 4
                             }
                           ],
                           "key": "tgc855brd3",
@@ -1217,6 +1298,14 @@
               "jsonPathKeys": [
                 "async () => {\n  await storeValue('default_tab', ['Report']);\n}"
               ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "HR Time Log Dashboard_getTimesheetInfo",
+              "name": "getTimesheetInfo",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             }
           ]

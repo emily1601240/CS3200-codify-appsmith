@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "get_timesheet_info",
+    "name": "getEmployeeInfo",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/a/timesheet_info"
+        "url": "web:4000/a/employee_info"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "User Home",
+    "pageId": "HR Employee Dashboard",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -37,7 +37,7 @@
         "apiContentType": "none"
       }
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
@@ -48,7 +48,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "User Home_get_timesheet_info",
+  "id": "HR Employee Dashboard_getEmployeeInfo",
   "deleted": false,
-  "gitSyncId": "643f50a124e3b61452ed135e_643f5b6224e3b61452ed13f2"
+  "gitSyncId": "643ffe2f28fbb13cf65a6746_6440063528fbb13cf65a6779"
 }
