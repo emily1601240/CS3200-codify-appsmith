@@ -663,7 +663,7 @@
                       "responsiveBehavior": "fill",
                       "originalTopRow": 41,
                       "originalBottomRow": 45
-                     },
+                    },
                     {
                       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
                       "borderColor": "#E0DEDE",
