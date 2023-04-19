@@ -1,3 +1,0 @@
-UPDATE job_applications
-  SET application_status = '{{applicant_status_dropdown.selectedOptionValue}}'
-  WHERE id = '{{ application_table.selectedRow.id }}';
