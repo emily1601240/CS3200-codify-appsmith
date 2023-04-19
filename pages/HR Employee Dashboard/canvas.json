@@ -414,6 +414,18 @@
                         },
                         {
                           "key": "schema.__root_schema__.children.customField1.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField2.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField2.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField3.accentColor"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.customField3.borderRadius"
                         }
                       ],
                       "showReset": true,
@@ -544,7 +556,7 @@
                               "isCustomField": false,
                               "accessor": "date_of_birth",
                               "identifier": "date_of_birth",
-                              "position": 1,
+                              "position": 2,
                               "originalIdentifier": "date_of_birth",
                               "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
                               "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
@@ -554,7 +566,7 @@
                               "dateFormat": "DD/MM/YYYY",
                               "isDisabled": false,
                               "isRequired": false,
-                              "isVisible": true,
+                              "isVisible": false,
                               "label": "Dep. ID",
                               "maxDate": "2121-12-31T18:29:00.000Z",
                               "minDate": "1920-12-31T18:30:00.000Z",
@@ -571,7 +583,7 @@
                               "isCustomField": false,
                               "accessor": "employee_id",
                               "identifier": "employee_id",
-                              "position": 2,
+                              "position": 4,
                               "originalIdentifier": "employee_id",
                               "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
                               "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
@@ -580,7 +592,7 @@
                               "isDisabled": false,
                               "isRequired": false,
                               "isSpellCheck": false,
-                              "isVisible": true,
+                              "isVisible": false,
                               "labelTextSize": "0.875rem",
                               "label": "Emp.ID"
                             },
@@ -592,7 +604,7 @@
                               "isCustomField": true,
                               "accessor": "customField1",
                               "identifier": "customField1",
-                              "position": 3,
+                              "position": 5,
                               "originalIdentifier": "customField1",
                               "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
                               "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
@@ -604,6 +616,48 @@
                               "isVisible": true,
                               "labelTextSize": "0.875rem",
                               "label": "Title"
+                            },
+                            "customField2": {
+                              "children": {},
+                              "dataType": "string",
+                              "fieldType": "Text Input",
+                              "sourceData": "",
+                              "isCustomField": true,
+                              "accessor": "customField2",
+                              "identifier": "customField2",
+                              "position": 3,
+                              "originalIdentifier": "customField2",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                              "boxShadow": "none",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isSpellCheck": false,
+                              "isVisible": true,
+                              "labelTextSize": "0.875rem",
+                              "label": "Emp.ID"
+                            },
+                            "customField3": {
+                              "children": {},
+                              "dataType": "string",
+                              "fieldType": "Text Input",
+                              "sourceData": "",
+                              "isCustomField": true,
+                              "accessor": "customField3",
+                              "identifier": "customField3",
+                              "position": 1,
+                              "originalIdentifier": "customField3",
+                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                              "boxShadow": "none",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isSpellCheck": false,
+                              "isVisible": true,
+                              "labelTextSize": "0.875rem",
+                              "label": "Dep. ID"
                             }
                           },
                           "dataType": "object",
@@ -1251,6 +1305,18 @@
                   "isDisabled": false,
                   "isVisible": true,
                   "buttonColor": "#581c87"
+                },
+                "groupButtonosyzmpjpsi": {
+                  "id": "groupButtonosyzmpjpsi",
+                  "index": 4,
+                  "label": "Group Button 1",
+                  "menuItems": {},
+                  "buttonType": "SIMPLE",
+                  "placement": "CENTER",
+                  "widgetId": "0bap9syrmm",
+                  "isDisabled": false,
+                  "isVisible": true,
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
                 }
               },
               "type": "BUTTON_GROUP_WIDGET",
@@ -1259,7 +1325,11 @@
               "parentColumnSpace": 17.9375,
               "dynamicTriggerPathList": [],
               "leftColumn": 10,
-              "dynamicBindingPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "groupButtons.groupButtonosyzmpjpsi.buttonColor"
+                }
+              ],
               "isDisabled": false,
               "key": "py3qlpwmzq",
               "orientation": "vertical",
