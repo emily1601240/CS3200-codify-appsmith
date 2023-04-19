@@ -114,18 +114,6 @@
                       "animateLoading": true,
                       "dynamicBindingPathList": [
                         {
-                          "key": "primaryColumns.step.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.task.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.status.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.action.computedValue"
-                        },
-                        {
                           "key": "accentColor"
                         },
                         {
@@ -135,13 +123,19 @@
                           "key": "boxShadow"
                         },
                         {
-                          "key": "primaryColumns.action.buttonColor"
+                          "key": "primaryColumns.depname.computedValue"
                         },
                         {
-                          "key": "primaryColumns.action.borderRadius"
+                          "key": "primaryColumns.fname.computedValue"
                         },
                         {
-                          "key": "primaryColumns.action.boxShadow"
+                          "key": "primaryColumns.id.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.role.computedValue"
+                        },
+                        {
+                          "key": "tableData"
                         }
                       ],
                       "needsHeightForContent": true,
@@ -181,18 +175,17 @@
                         }
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "columnUpdatedAt": 1681842435547,
+                      "columnUpdatedAt": 1681917812336,
                       "defaultSelectedRowIndices": [
                         0
                       ],
                       "widgetName": "Employees_Table",
                       "defaultPageSize": 0,
                       "columnOrder": [
-                        "step",
-                        "task",
-                        "customColumn1",
-                        "status",
-                        "action"
+                        "fname",
+                        "id",
+                        "role",
+                        "depname"
                       ],
                       "dynamicPropertyPathList": [],
                       "compactMode": "SHORT",
@@ -210,134 +203,24 @@
                       "parentColumnSpace": 7.53515625,
                       "dynamicTriggerPathList": [
                         {
-                          "key": "primaryColumns.action.onClick"
-                        },
-                        {
                           "key": "onRowSelected"
                         }
                       ],
                       "borderWidth": "1",
                       "primaryColumns": {
-                        "step": {
+                        "depname": {
+                          "allowCellWrapping": false,
                           "index": 0,
                           "width": 150,
-                          "id": "step",
-                          "originalId": "step",
-                          "alias": "step",
+                          "originalId": "depname",
+                          "id": "depname",
+                          "alias": "depname",
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
-                          "columnType": "text",
+                          "columnType": "number",
+                          "textColor": "#18181b",
                           "textSize": "0.875rem",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isCellVisible": true,
-                          "isCellEditable": false,
-                          "isDerived": false,
-                          "label": "ID",
-                          "computedValue": "{{Employees_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"step\"]))}}",
-                          "validation": {},
-                          "sticky": "",
-                          "labelColor": "#FFFFFF",
                           "fontStyle": "",
-                          "cellBackground": "#ffffff",
-                          "textColor": "#18181b"
-                        },
-                        "task": {
-                          "index": 1,
-                          "width": 150,
-                          "id": "task",
-                          "originalId": "task",
-                          "alias": "task",
-                          "horizontalAlignment": "LEFT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textSize": "0.875rem",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isCellVisible": true,
-                          "isCellEditable": false,
-                          "isDerived": false,
-                          "label": "Employee Name",
-                          "computedValue": "{{Employees_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"task\"]))}}",
-                          "validation": {},
-                          "sticky": "",
-                          "labelColor": "#FFFFFF",
-                          "fontStyle": "",
-                          "cellBackground": "#ffffff",
-                          "textColor": "#18181b"
-                        },
-                        "status": {
-                          "index": 2,
-                          "width": 150,
-                          "id": "status",
-                          "originalId": "status",
-                          "alias": "status",
-                          "horizontalAlignment": "LEFT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textSize": "0.875rem",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": true,
-                          "isCellVisible": true,
-                          "isCellEditable": false,
-                          "isDerived": false,
-                          "label": "Role",
-                          "computedValue": "{{Employees_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"status\"]))}}",
-                          "validation": {},
-                          "sticky": "",
-                          "labelColor": "#FFFFFF",
-                          "fontStyle": "",
-                          "cellBackground": "#ffffff",
-                          "textColor": "#18181b"
-                        },
-                        "action": {
-                          "index": 3,
-                          "width": 150,
-                          "id": "action",
-                          "originalId": "action",
-                          "alias": "action",
-                          "horizontalAlignment": "LEFT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "button",
-                          "textSize": "0.875rem",
-                          "enableFilter": true,
-                          "enableSort": true,
-                          "isVisible": false,
-                          "isCellVisible": false,
-                          "isCellEditable": false,
-                          "isDisabled": true,
-                          "isDerived": false,
-                          "label": "Update Role",
-                          "onClick": "{{showModal()}}",
-                          "computedValue": "{{Employees_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"action\"]))}}",
-                          "validation": {},
-                          "sticky": "right",
-                          "labelColor": "#FFFFFF",
-                          "cellBackground": "#ffffff",
-                          "buttonVariant": "PRIMARY",
-                          "customAlias": "",
-                          "menuItemsSource": "STATIC",
-                          "buttonLabel": "Action",
-                          "buttonColor": "{{Employees_Table.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.colors.primaryColor))}}",
-                          "borderRadius": "{{Employees_Table.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
-                          "boxShadow": "{{Employees_Table.processedTableData.map((currentRow, currentIndex) => ( 'none'))}}",
-                          "fontStyle": "",
-                          "textColor": "#18181b"
-                        },
-                        "customColumn1": {
-                          "allowCellWrapping": false,
-                          "index": 4,
-                          "width": 150,
-                          "originalId": "customColumn1",
-                          "id": "customColumn1",
-                          "alias": "Dept. Name",
-                          "horizontalAlignment": "LEFT",
-                          "verticalAlignment": "CENTER",
-                          "columnType": "text",
-                          "textSize": "0.875rem",
                           "enableFilter": true,
                           "enableSort": true,
                           "isVisible": true,
@@ -345,18 +228,101 @@
                           "isCellEditable": false,
                           "isEditable": false,
                           "isCellVisible": true,
-                          "isDerived": true,
-                          "label": "Dept. Name",
+                          "isDerived": false,
+                          "label": "Dept. ID",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "",
+                          "computedValue": "{{Employees_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"depname\"]))}}",
                           "sticky": "",
                           "validation": {},
-                          "buttonStyle": "rgb(3, 179, 101)",
-                          "labelColor": "#FFFFFF",
+                          "cellBackground": "#ffffff"
+                        },
+                        "fname": {
+                          "allowCellWrapping": false,
+                          "index": 1,
+                          "width": 150,
+                          "originalId": "fname",
+                          "id": "fname",
+                          "alias": "fname",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "#18181b",
+                          "textSize": "0.875rem",
                           "fontStyle": "",
-                          "cellBackground": "#ffffff",
-                          "textColor": "#18181b"
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "Name",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Employees_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"fname\"]))}}",
+                          "sticky": "",
+                          "validation": {},
+                          "cellBackground": "#ffffff"
+                        },
+                        "id": {
+                          "allowCellWrapping": false,
+                          "index": 2,
+                          "width": 150,
+                          "originalId": "id",
+                          "id": "id",
+                          "alias": "id",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "number",
+                          "textColor": "#18181b",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "Employee ID",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Employees_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}",
+                          "sticky": "",
+                          "validation": {},
+                          "cellBackground": "#ffffff"
+                        },
+                        "role": {
+                          "allowCellWrapping": false,
+                          "index": 3,
+                          "width": 150,
+                          "originalId": "role",
+                          "id": "role",
+                          "alias": "role",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "#18181b",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "Role",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{Employees_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"role\"]))}}",
+                          "sticky": "",
+                          "validation": {},
+                          "cellBackground": "#ffffff"
                         }
                       },
                       "onRowSelected": "{{storeValue('SelectedEmployee','GET THE SELECTED EMPLOYEE')}}",
@@ -367,7 +333,7 @@
                       "textSize": "0.875rem",
                       "widgetId": "sto2qw61jn",
                       "minWidth": 450,
-                      "tableData": "",
+                      "tableData": "{{getEmployeeInfo.data}}",
                       "label": "Data",
                       "searchKey": "",
                       "parentId": "fi1mfel9i0",
@@ -990,7 +956,18 @@
             }
           ]
         },
-        "layoutOnLoadActions": [],
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "HR Employee Dashboard_getEmployeeInfo",
+              "name": "getEmployeeInfo",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "HR Employee Dashboard",

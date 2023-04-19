@@ -676,27 +676,6 @@
                       "animateLoading": true,
                       "dynamicBindingPathList": [
                         {
-                          "key": "primaryColumns.step.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.task.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.status.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.action.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.action.buttonColor"
-                        },
-                        {
-                          "key": "primaryColumns.action.borderRadius"
-                        },
-                        {
-                          "key": "primaryColumns.action.boxShadow"
-                        },
-                        {
                           "key": "accentColor"
                         },
                         {
@@ -707,6 +686,27 @@
                         },
                         {
                           "key": "tableData"
+                        },
+                        {
+                          "key": "primaryColumns.firstName.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.lastName.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.midInit.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.portfolio.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.role.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.userID.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.username.computedValue"
                         }
                       ],
                       "needsHeightForContent": true,
@@ -744,7 +744,7 @@
                         }
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "columnUpdatedAt": 1681871482201,
+                      "columnUpdatedAt": 1681917381840,
                       "originalBottomRow": 66,
                       "defaultSelectedRowIndices": [
                         0
@@ -752,10 +752,13 @@
                       "widgetName": "user_info_table",
                       "defaultPageSize": 0,
                       "columnOrder": [
-                        "step",
-                        "task",
-                        "status",
-                        "action"
+                        "firstName",
+                        "lastName",
+                        "midInit",
+                        "portfolio",
+                        "role",
+                        "userID",
+                        "username"
                       ],
                       "dynamicPropertyPathList": [],
                       "displayName": "Table",
@@ -771,98 +774,208 @@
                       "dynamicTriggerPathList": [],
                       "borderWidth": "1",
                       "primaryColumns": {
-                        "step": {
+                        "firstName": {
+                          "allowCellWrapping": false,
                           "index": 0,
                           "width": 150,
-                          "id": "step",
-                          "originalId": "step",
-                          "alias": "step",
+                          "originalId": "firstName",
+                          "id": "firstName",
+                          "alias": "firstName",
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
+                          "textColor": "",
                           "textSize": "0.875rem",
+                          "fontStyle": "",
                           "enableFilter": true,
                           "enableSort": true,
                           "isVisible": true,
-                          "isCellVisible": true,
+                          "isDisabled": false,
                           "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
                           "isDerived": false,
-                          "label": "user_id",
-                          "computedValue": "{{user_info_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"step\"]))}}",
-                          "validation": {},
+                          "label": "firstName",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{user_info_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"firstName\"]))}}",
                           "sticky": "",
-                          "labelColor": "#FFFFFF"
+                          "validation": {},
+                          "cellBackground": ""
                         },
-                        "task": {
+                        "lastName": {
+                          "allowCellWrapping": false,
                           "index": 1,
                           "width": 150,
-                          "id": "task",
-                          "originalId": "task",
-                          "alias": "task",
+                          "originalId": "lastName",
+                          "id": "lastName",
+                          "alias": "lastName",
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
+                          "textColor": "",
                           "textSize": "0.875rem",
+                          "fontStyle": "",
                           "enableFilter": true,
                           "enableSort": true,
                           "isVisible": true,
-                          "isCellVisible": true,
+                          "isDisabled": false,
                           "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
                           "isDerived": false,
-                          "label": "username",
-                          "computedValue": "{{user_info_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"task\"]))}}",
-                          "validation": {},
+                          "label": "lastName",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{user_info_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"lastName\"]))}}",
                           "sticky": "",
-                          "labelColor": "#FFFFFF"
+                          "validation": {},
+                          "cellBackground": ""
                         },
-                        "status": {
+                        "midInit": {
+                          "allowCellWrapping": false,
                           "index": 2,
                           "width": 150,
-                          "id": "status",
-                          "originalId": "status",
-                          "alias": "status",
+                          "originalId": "midInit",
+                          "id": "midInit",
+                          "alias": "midInit",
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
+                          "textColor": "",
                           "textSize": "0.875rem",
+                          "fontStyle": "",
                           "enableFilter": true,
                           "enableSort": true,
                           "isVisible": true,
-                          "isCellVisible": true,
+                          "isDisabled": false,
                           "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
                           "isDerived": false,
-                          "label": "",
-                          "computedValue": "{{user_info_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"status\"]))}}",
-                          "validation": {},
+                          "label": "midInit",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{user_info_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"midInit\"]))}}",
                           "sticky": "",
-                          "labelColor": "#FFFFFF"
+                          "validation": {},
+                          "cellBackground": ""
                         },
-                        "action": {
+                        "portfolio": {
+                          "allowCellWrapping": false,
                           "index": 3,
                           "width": 150,
-                          "id": "action",
-                          "originalId": "action",
-                          "alias": "action",
+                          "originalId": "portfolio",
+                          "id": "portfolio",
+                          "alias": "portfolio",
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
-                          "columnType": "button",
+                          "columnType": "text",
+                          "textColor": "",
                           "textSize": "0.875rem",
+                          "fontStyle": "",
                           "enableFilter": true,
                           "enableSort": true,
                           "isVisible": true,
-                          "isCellVisible": true,
-                          "isCellEditable": false,
                           "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
                           "isDerived": false,
-                          "label": "action",
-                          "onClick": "{{currentRow.step === '#1' ? showAlert('Done', 'success') : currentRow.step === '#2' ? navigateTo('https://docs.appsmith.com/core-concepts/connecting-to-data-sources/querying-a-database',undefined,'NEW_WINDOW') : navigateTo('https://docs.appsmith.com/core-concepts/displaying-data-read/display-data-tables',undefined,'NEW_WINDOW')}}",
-                          "computedValue": "{{user_info_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"action\"]))}}",
-                          "validation": {},
+                          "label": "portfolio",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{user_info_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"portfolio\"]))}}",
                           "sticky": "",
-                          "labelColor": "#FFFFFF",
-                          "buttonColor": "{{user_info_table.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.colors.primaryColor))}}",
-                          "borderRadius": "{{user_info_table.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
-                          "boxShadow": "{{user_info_table.processedTableData.map((currentRow, currentIndex) => ( 'none'))}}"
+                          "validation": {},
+                          "cellBackground": ""
+                        },
+                        "role": {
+                          "allowCellWrapping": false,
+                          "index": 4,
+                          "width": 150,
+                          "originalId": "role",
+                          "id": "role",
+                          "alias": "role",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "role",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{user_info_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"role\"]))}}",
+                          "sticky": "",
+                          "validation": {},
+                          "cellBackground": ""
+                        },
+                        "userID": {
+                          "allowCellWrapping": false,
+                          "index": 5,
+                          "width": 150,
+                          "originalId": "userID",
+                          "id": "userID",
+                          "alias": "userID",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "number",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "userID",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{user_info_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"userID\"]))}}",
+                          "sticky": "",
+                          "validation": {},
+                          "cellBackground": ""
+                        },
+                        "username": {
+                          "allowCellWrapping": false,
+                          "index": 6,
+                          "width": 150,
+                          "originalId": "username",
+                          "id": "username",
+                          "alias": "username",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "username",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{user_info_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"username\"]))}}",
+                          "sticky": "",
+                          "validation": {},
+                          "cellBackground": ""
                         }
                       },
                       "key": "mhaipg9gqu",
@@ -932,7 +1045,7 @@
               "originalTopRow": 0,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 79,
+              "originalBottomRow": 72,
               "minDynamicHeight": 15
             },
             {
