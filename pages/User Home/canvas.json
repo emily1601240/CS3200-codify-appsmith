@@ -90,7 +90,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 12.2998046875,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 1,
+                      "leftColumn": 2,
                       "dynamicBindingPathList": [
                         {
                           "key": "borderRadius"
@@ -411,7 +411,7 @@
                       "key": "e3ilpo4ftj",
                       "backgroundColor": "#e9d5ff",
                       "isDeprecated": false,
-                      "rightColumn": 62,
+                      "rightColumn": 63,
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "euwv4lwsfg",
                       "containerStyle": "card",
@@ -744,11 +744,7 @@
                         }
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-<<<<<<< HEAD
                       "columnUpdatedAt": 1681917381840,
-=======
-                      "columnUpdatedAt": 1681945866332,
->>>>>>> 78b54510754137d3d2aff575cf394fce54bc1690
                       "originalBottomRow": 66,
                       "defaultSelectedRowIndices": [
                         0
@@ -756,13 +752,13 @@
                       "widgetName": "user_info_table",
                       "defaultPageSize": 0,
                       "columnOrder": [
-                        "username",
                         "firstName",
                         "lastName",
                         "midInit",
                         "portfolio",
                         "role",
-                        "userID"
+                        "userID",
+                        "username"
                       ],
                       "dynamicPropertyPathList": [],
                       "displayName": "Table",
@@ -770,14 +766,7 @@
                       "columnWidthMap": {
                         "task": 245,
                         "step": 70,
-                        "status": 85,
-                        "midInit": 115,
-                        "lastName": 125,
-                        "firstName": 114,
-                        "role": 108,
-                        "userID": 114,
-                        "portfolio": 138,
-                        "username": 137
+                        "status": 85
                       },
                       "parentRowSpace": 10,
                       "hideCard": false,
@@ -806,7 +795,7 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "First Name",
+                          "label": "firstName",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{user_info_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"firstName\"]))}}",
@@ -835,7 +824,7 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "Last Name",
+                          "label": "lastName",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{user_info_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"lastName\"]))}}",
@@ -864,7 +853,7 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "Mid. Initial",
+                          "label": "midInit",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{user_info_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"midInit\"]))}}",
@@ -893,7 +882,7 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "Portfolio",
+                          "label": "portfolio",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{user_info_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"portfolio\"]))}}",
@@ -922,7 +911,7 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "Role",
+                          "label": "role",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{user_info_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"role\"]))}}",
@@ -951,7 +940,7 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "ID",
+                          "label": "userID",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{user_info_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"userID\"]))}}",
@@ -980,7 +969,7 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "Username",
+                          "label": "username",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{user_info_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"username\"]))}}",
@@ -1030,7 +1019,7 @@
               "key": "rxbmut8uhr",
               "backgroundColor": "#FFFFFF",
               "isDeprecated": false,
-              "rightColumn": 49,
+              "rightColumn": 46,
               "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "v1s80uvbaz",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
