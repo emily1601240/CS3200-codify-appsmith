@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 850,
+          "bottomRow": 930,
           "containerStyle": "none",
           "snapRows": 128,
           "parentRowSpace": 1,
@@ -129,13 +129,13 @@
                           "key": "tableData"
                         },
                         {
-                          "key": "primaryColumns.dep.computedValue"
+                          "key": "primaryColumns.depname.computedValue"
                         },
                         {
-                          "key": "primaryColumns.employee_id.computedValue"
+                          "key": "primaryColumns.id.computedValue"
                         },
                         {
-                          "key": "primaryColumns.title.computedValue"
+                          "key": "primaryColumns.role.computedValue"
                         }
                       ],
                       "needsHeightForContent": true,
@@ -175,7 +175,7 @@
                         }
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "columnUpdatedAt": 1681923895813,
+                      "columnUpdatedAt": 1681933722671,
                       "defaultSelectedRowIndices": [
                         0
                       ],
@@ -183,9 +183,9 @@
                       "defaultPageSize": 0,
                       "columnOrder": [
                         "fname",
-                        "dep",
-                        "employee_id",
-                        "title"
+                        "depname",
+                        "id",
+                        "role"
                       ],
                       "dynamicPropertyPathList": [],
                       "compactMode": "SHORT",
@@ -237,13 +237,13 @@
                           "validation": {},
                           "cellBackground": "#ffffff"
                         },
-                        "dep": {
+                        "depname": {
                           "allowCellWrapping": false,
                           "index": 0,
                           "width": 150,
-                          "originalId": "dep",
-                          "id": "dep",
-                          "alias": "dep",
+                          "originalId": "depname",
+                          "id": "depname",
+                          "alias": "depname",
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
                           "columnType": "number",
@@ -258,21 +258,21 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "Dep. ID",
+                          "label": "depname",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Employees_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"dep\"]))}}",
+                          "computedValue": "{{Employees_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"depname\"]))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": "#ffffff"
                         },
-                        "employee_id": {
+                        "id": {
                           "allowCellWrapping": false,
-                          "index": 1,
+                          "index": 2,
                           "width": 150,
-                          "originalId": "employee_id",
-                          "id": "employee_id",
-                          "alias": "employee_id",
+                          "originalId": "id",
+                          "id": "id",
+                          "alias": "id",
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
                           "columnType": "number",
@@ -287,21 +287,21 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "Emp. ID",
+                          "label": "id",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Employees_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"employee_id\"]))}}",
+                          "computedValue": "{{Employees_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": "#ffffff"
                         },
-                        "title": {
+                        "role": {
                           "allowCellWrapping": false,
                           "index": 3,
                           "width": 150,
-                          "originalId": "title",
-                          "id": "title",
-                          "alias": "title",
+                          "originalId": "role",
+                          "id": "role",
+                          "alias": "role",
                           "horizontalAlignment": "LEFT",
                           "verticalAlignment": "CENTER",
                           "columnType": "text",
@@ -316,10 +316,10 @@
                           "isEditable": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "Title",
+                          "label": "role",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{Employees_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"title\"]))}}",
+                          "computedValue": "{{Employees_Table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"role\"]))}}",
                           "sticky": "",
                           "validation": {},
                           "cellBackground": "#ffffff"
