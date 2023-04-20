@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "postEmployeeInfo",
+    "name": "delete_project",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/a/employee_info_post"
+        "url": "web:4000/u/delete_project"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "HR Employee Dashboard",
+    "pageId": "User Home",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -29,9 +29,9 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{{add_employee_info.data}}",
+      "body": "{{get_project.data[0]}}",
       "bodyFormData": [],
-      "httpMethod": "POST",
+      "httpMethod": "DELETE",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -52,14 +52,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "add_employee_info.data"
+      "get_project.data[0]"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "HR Employee Dashboard_postEmployeeInfo",
+  "id": "User Home_delete_project",
   "deleted": false,
-  "gitSyncId": "643ffe2f28fbb13cf65a6746_64401c1b28fbb13cf65a6782"
+  "gitSyncId": "643f5cf5192a362b9d5ee481_6440b65184b6e041dbe8b34f"
 }

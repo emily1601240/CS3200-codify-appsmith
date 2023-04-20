@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/u/create_project"
+        "url": "web:4000/u/user_profile"
       },
       "invalids": [],
       "messages": [],
@@ -42,7 +42,7 @@
         "apiContentType": "application/json"
       }
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
