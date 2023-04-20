@@ -29,10 +29,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-<<<<<<< HEAD:pages/HR Time Log Dashboard/queries/get_user_dashboard/metadata.json
-=======
       "body": "{{add_employee_info.data}}",
->>>>>>> 3ef71d41ae0c74a4b5df60646ac0c5b33219b3dc:pages/HR Employee Dashboard/queries/putEmployeeInfo/metadata.json
       "bodyFormData": [],
       "httpMethod": "PUT",
       "selfReferencingDataPaths": [],
