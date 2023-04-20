@@ -926,7 +926,7 @@
                               ],
                               "dynamicPropertyPathList": [],
                               "displayName": "Table",
-                              "bottomRow": 33,
+                              "bottomRow": 41,
                               "columnWidthMap": {
                                 "task": 245,
                                 "step": 173,
@@ -1289,17 +1289,6 @@
         },
         "layoutOnLoadActions": [
           [
-            {
-              "id": "HR Time Log Dashboard_JSObject1.tabDefault",
-              "name": "JSObject1.tabDefault",
-              "collectionId": "HR Time Log Dashboard_JSObject1",
-              "confirmBeforeExecute": false,
-              "pluginType": "JS",
-              "jsonPathKeys": [
-                "async () => {\n  await storeValue('default_tab', ['Report']);\n}"
-              ],
-              "timeoutInMillisecond": 10000
-            },
             {
               "id": "HR Time Log Dashboard_getTimesheetInfo",
               "name": "getTimesheetInfo",
