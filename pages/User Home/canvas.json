@@ -90,7 +90,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 12.2998046875,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 2,
+                      "leftColumn": 1,
                       "dynamicBindingPathList": [
                         {
                           "key": "borderRadius"
@@ -411,7 +411,7 @@
                       "key": "e3ilpo4ftj",
                       "backgroundColor": "#e9d5ff",
                       "isDeprecated": false,
-                      "rightColumn": 63,
+                      "rightColumn": 62,
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "euwv4lwsfg",
                       "containerStyle": "card",
@@ -744,7 +744,11 @@
                         }
                       },
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+<<<<<<< HEAD
+                      "columnUpdatedAt": 1681917381840,
+=======
                       "columnUpdatedAt": 1681945866332,
+>>>>>>> 78b54510754137d3d2aff575cf394fce54bc1690
                       "originalBottomRow": 66,
                       "defaultSelectedRowIndices": [
                         0
